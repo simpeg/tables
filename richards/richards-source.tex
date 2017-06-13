@@ -1,0 +1,24 @@
+\begin{table}[!ht]
+\centering
+\caption{Fictitious source test for Richards equation in 1D using the mixed-form Newton iteration.}
+\begin{tabular}{*{3}{c}}
+\\[-0.5em]
+\hline
+\\[-0.5em]
+Mesh Size (n)    &     $||\Psi(x,0.5) - \Psi_{\text{true}}(x,0.5)||_\infty$     &    Order Decrease, $\mathcal{O}(\delta)$ \\[0.5em]
+\hline
+\\[-0.5em]
+           64    &    5.485569e+00    &                    \\
+          128    &    2.952912e+00    &             0.894  \\
+          256    &    1.556827e+00    &             0.924  \\
+          512    &    8.035072e-01    &             0.954  \\
+         1024    &    4.086729e-01    &             0.975  \\
+         2048    &    2.060448e-01    &             0.988  \\
+         4096    &    1.034566e-01    &             0.994  \\
+         8192    &    5.184507e-02    &             0.997  \\
+
+\\[-0.5em]
+\hline
+\end{tabular}
+\label{table:richards-source}
+\end{table}

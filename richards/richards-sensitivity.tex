@@ -1,0 +1,32 @@
+\begin{table}[!ht]
+\centering
+\caption{Comparison of the memory necessary for storing the dense explicit sensitivity matrix compared to the peak memory used for the implicit sensitivity calculation excluding the matrix solve. The calculations are completed on a variety of mesh sizes for a single distributed parameter ($K_s$) as well as for five distributed van Genuchten model parameters ($K_s, \alpha, n, \theta_r$, and $\theta_s$). Values are reported in gigabytes (GB).}
+\begin{tabular}{*{5}c}
+\hline
+ &   \multicolumn{2}{c}{\bf Explicit Sensitivity} &    \multicolumn{2}{c}{\bf Implicit Sensitivity}  \\
+Mesh Size & 1 parameter & 5 parameters & 1 parameter & 5 parameters  \\
+\hline
+$32 \times 32 \times 32$    & 1.31 &  6.55 &  0.136 & 0.171\\
+$64 \times 64 \times 64$    & 10.5 &  52.4 &  0.522 & 0.772\\
+$128 \times 128 \times 128$ & 83.9 &  419  &  3.54  & 4.09 \\
+\hline
+\end{tabular}
+\label{table:richards-sensitivity}
+\end{table}
+
+
+% 32**3 * 5000 * 8 / 1e9
+% 1.31072
+% 32**3 * 5000 * 8 / 1e9 * 5
+% 6.5536
+% 64**3 * 5000 * 8 / 1e9
+% 10.48576
+% 64**3 * 5000 * 8 / 1e9 * 5
+% 52.4288
+% 128**3 * 5000 * 8 / 1e9
+% 83.88608
+% 128**3 * 5000 * 8 / 1e9 * 5
+% 419.4304
+
+
+% 16**3 * 5000 * 8 / 1e9

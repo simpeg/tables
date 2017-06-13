@@ -1,0 +1,25 @@
+\begin{table}[ht]
+\caption{Selected \Mesh class properties with explanations.}
+% \scriptsize
+\label{table:Mesh}
+  \begin{tabular}{  p{4cm}  p{9.5cm} }
+    \hline
+
+    Property or Function & Explanation \\ \hline
+    dim  & Dimension of the mesh\\
+    x0  & Location of the origin\\
+    nC, nN, nF, nE & The number of cells, nodes, faces, or edges. (e.g. nC is the total number of cells)\\
+    % vnC, vnN, vnF, vnE & Number of cells as vectors (e.g. \texttt{vnC == [nCx, nCy, nCz]})\\
+    vol, area, edge  & Geometric measurements for the mesh\\ % (w.r.t. 3D nomenclature)
+    gridN, gridCC, etc.  & Array of grid locations\\
+    nodalGrad  &  Gradient of a nodal variable $\rightarrow$ edge variable\\
+    faceDiv  & Divergence of a face variable $\rightarrow$ cell-centered variable\\
+    edgeCurl  & Curl of a edge variable $\rightarrow$ face variable\\
+    cellGrad  & Gradient of a cell-centered variable $\rightarrow$ face variable\\
+    aveF2CC, aveN2CC, etc.  & Averaging operators (e.g. F$\rightarrow$CC, takes values on faces and averages them to cell-centers)\\
+    % getEdgeInnerProduct(), getFaceInnerProduct()  & Inner product operators for material properties\\
+    getInterpolationMat(loc)  & Interpolation matrix for xyz locations\\
+
+    \hline
+  \end{tabular}
+\end{table}

@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\caption{Selected \Survey class properties with explanations.}
+% \scriptsize
+\label{table:Survey}
+  \begin{tabular}{  p{3.5cm}  p{10cm} }
+    \hline
+
+    Property or Function  & Explanation \\ \hline
+
+    dobs, nD                 & $\dobs$, number of data\\
+    std                      & Estimated standard deviations\\
+    srcList                   & List of sources with associated receivers\\
+    dpred(m)                 & Predicted data given a model, $\dpred(m)$\\
+    projectFields(m, u)      & Projects the fields, $P(m,u)$\\
+    projectFieldsDeriv(m, u) & Derivative of the projection, $\deriv{P(m,u)}{m}$\\
+    residual(m)              & $\dpred(m) - \dobs$\\
+
+    \hline
+  \end{tabular}
+\end{table}
